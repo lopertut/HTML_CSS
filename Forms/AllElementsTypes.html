@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Типы элементов формы</title>
+</head>
+<body>
+    <form>
+        <!--Кнопка, основное событие onclick-->
+        <input type="button" name="button" value="Button1" />
+        <br />
+
+        <!--Флажок, основное событие onclick-->
+        <input type="checkbox" tested="checked" name="checkbox1" />
+        Check Box 1
+        <br />
+
+        <!--Поле для ввода файла загружаймого на сервер, основное событие оnchange-->
+        <input type="file" name="file1" value="" />
+
+        <br />
+
+        <!--Data stored with the form but not visible to the user.-->
+
+        <input type="hidden" name="hidden1" value="" />
+        <br />
+
+        <!--Password input field-->
+
+        <input type="password" name="password1" value="" />
+        <br />
+
+        <!--Switch -->
+
+        Radio 1<input type="radio" checked="checked" name="group1" />
+        Radio 2<input type="radio" name="group1" />
+        <br />
+
+        <!--Button that clears form values. -->
+        <input type="reset" name="reset1" value="Reset" />
+        <br />
+        <br />
+
+        <!--A list from which one element can be selected-->
+        <select name="select1">
+            <option value="value1">text 1</option>
+            <option value="value2">text 2</option>
+            <option value="value3">text 3</option>
+        </select>
+        <br />
+        <br />
+
+        <!--Multiple choice list-->
+        <select multiple="multiple" name="multipleSelect1">
+            <option value="value">text</option>
+            <option value="value">text</option>
+            <option value="value">text</option>
+        </select>
+        <br />
+        <br />
+
+        <!--Button for submitting form data-->
+        <input type="submit" name="submit" value="Submit" />
+
+        <br />
+
+        <!--Single line input field-->
+        <input type="text" name="text1" value="  " />
+        <br />
+
+        <!--Multi-line input field-->
+        <textarea name="textArea1" rows="4" cols="10"></textarea>
+    </form>
+</body>
+</html>
