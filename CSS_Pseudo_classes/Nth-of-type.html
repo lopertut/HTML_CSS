@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nth-of-type</title>
+    <style>
+
+        /* The :nth-of-type pseudo-class is used to add style to
+        elements of the specified type based on the numbering in the element tree. */
+        /* second paragraph in one parent container*/
+        #id1 p:nth-of-type(2) {
+            background: red;
+        }
+
+        /* second element in one container which is a paragraph */
+        #id2 p:nth-child(2) {
+            background: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="id1">
+        <h1>Header 1</h1>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p> <!--p:nth-of-type(2)-->
+        <p>Paragraph 3</p>
+    </div>
+
+    <div id="id2">
+        <h1>Header 2</h1>
+        <p>Paragraph 1</p> <!--p:nth-child(2)-->
+        <p>Paragraph 2</p>
+    </div>
+</body>
+</html>
