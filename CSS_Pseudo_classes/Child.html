@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Псевдоклассы last-child и first-child</title>
+    <style>
+        /* first paragraph in a given container */
+        p:first-of-type {
+            background-color: green;
+        }
+
+        /* first child of any div */
+        div:first-child {
+            background-color: blue;
+        }
+
+        /* last child of any div*/
+        div:last-child {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>First paragraph.</p>  <!--p:first-of-type-->
+    <p>Second paragraph.</p>
+    <p>The third paragraph.</p>
+    <p>Fourth paragraph.</p>
+
+    <div>
+        <span>First line</span> <!--div:first-child-->
+        <br />
+        <span>Second line</span>
+        <br />
+        <span>Third line</span>
+        <br />
+        <span>Fourth line</span> <!--div:last-child-->
+    </div>
+</body>
+</html>

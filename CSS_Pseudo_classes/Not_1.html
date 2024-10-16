@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /* all paragraphs are green */
+        p {
+            color: green;
+        }
+
+        /* :not() nclass for elements that do not contain the specified selector */
+        /* all elements that are not paragraphs are red*/
+        :not(p) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph</p>
+    <p>Another paragraph</p>
+    <div>Text in dive</div>
+    <a href="#" target="_blank">Link</a>
+</body>
+</html>
