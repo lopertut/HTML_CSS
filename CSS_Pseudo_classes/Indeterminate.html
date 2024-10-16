@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indeterminate</title>
+    <style>
+
+    /* :indeterminate elements in an indeterminate state.
+     The state is set via JavaScript code. */
+
+    :indeterminate + span {
+        background-color: limegreen;
+    }
+    </style>
+
+    <script>
+
+        window.onload = function () {
+            let inputs = document.querySelectorAll("input[type=checkbox]");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].indeterminate = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>
+            <input type="checkbox">
+            <span>Option 1</span>
+        </p>
+
+        <p>
+            <input type="checkbox">
+            <span>Option 2</span>
+        </p>
+
+        <p>
+            <input type="checkbox">
+            <span>Option 2</span>
+        </p>
+    </form>
+</body>
+</html>

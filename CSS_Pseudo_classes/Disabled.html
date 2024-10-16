@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disable</title>
+    <style>
+        /* disabled pseudo-class for getting inactive form elements */
+        textarea:disabled {
+            background: url(border.png);
+            border: 1px solid #666;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+            <textarea cols="30" rows="5">
+    This is a locked field, you can't write anything in it</textarea>
+            <textarea disabled cols="30" rows="5">
+    This is a locked field, you can't write anything in it</textarea>
+    </form>
+</body>
+</html>

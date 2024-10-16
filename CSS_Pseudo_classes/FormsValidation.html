@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invalid</title>
+    <style>
+
+        /* : invalid pseudo-class for getting form elements that contain errors */
+
+        input:invalid {
+            background: #fdd;
+            font-weight: bold;
+        }
+
+        /* :valid pseudo-classes to get form elements that are correctly filled in */
+        input:valid {
+            background: #dfd;
+        }
+    </style>
+</head>
+<body>
+    <form>
+
+        <p>Site address</p>
+        <p>
+            <!--In the correct format http://edu.cbsystematics.com/-->
+            <input type="url" required />
+        </p>
+
+        <p>Email address</p>
+        <p>
+            <!--In the correct format edu@cbsystematics.com-->
+            <input type="email" required />
+        </p>
+
+        <p>
+        <input type="submit" value="Submit" />
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Empty</title>
+    <style>
+
+        /* :empty pseudo-class that represents empty elements that contain no child elements, text, or spaces */
+
+        span:empty {
+            background: red;
+            padding: 3px;
+            margin: 7px;
+        }
+
+            span:empty::before {
+                content: "Empty element";
+                font-weight: bold;
+            }
+
+    </style>
+</head>
+<body>
+    <span></span>
+    <p>
+        Lorem ispum dolor<span></span> sit amet, consectetur adipiscing elit fusce vel
+        sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac
+        ipsum gravida vel pretium tellus.
+        <span></span>
+    </p>
+</body>
+</html>

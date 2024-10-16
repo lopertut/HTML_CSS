@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First-of-type and :last-of-type</title>
+    <style>
+
+    /* :first-of-type get the first element p in the list of children */
+    p:first-of-type {
+        background: red;
+    }
+
+    /* :last-of-type get the last p element in the list of children */
+    p:last-of-type {
+        background: green;
+    }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>First paragraph.</p> <!--first-of-type-->
+    <p>Second paragraph.</p>
+    <p>The third paragraph.</p>
+    <p>Fourth paragraph.</p> <!--Last-of-type-->
+
+    <div>
+        <p>First paragraph.</p> <!--first-of-type-->
+        <p>Second paragraph.</p>
+        <p>The third paragraph.</p>
+        <p>Fourth paragraph.</p> <!--last-of-type-->
+    </div>
+</body>
+</html>
